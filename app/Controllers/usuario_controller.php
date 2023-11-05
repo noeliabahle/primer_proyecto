@@ -56,4 +56,38 @@ class Usuario_controller extends Controller {
             return redirect()->to('/');
         }
     }
+
+      public function eliminarUsuario($id = null)
+{
+    $v_usuarioModel = new Usuarios_model();
+
+    // Obtén el ID del usuario logueado desde la sesión
+    $usuarioLogueadoId = session()->get('id');
+
+    // Comprueba si el ID del usuario a eliminar es igual al ID del usuario logueado
+    if ($id == $usuarioLogueadoId) {
+        // Aquí puedes mostrar un mensaje de error o realizar otra acción apropiada
+        session()->setFlashdata('success', 'No puedes eliminar tu propio usuario.');
+        return redirect()->to(site_url('/crud_usuarios'));
+    }
+
+    // Si no es el usuario logueado, procede a realizar la eliminación
+    $data = [
+        'baja' => "SI"
+    ];
+    $v_usuarioModel->update($id, $data);
+     session()->setFlashdata('success', 'Usuario eliminado con éxito');
+    return $this->response->redirect(site_url('/crud_usuarios'));
+}
+
+  public function restaurarUsuario($id = null)
+  {
+    $v_usuarioModel = new Usuarios_model();
+    $data = [
+      'baja' => "NO"
+    ];
+    $v_usuarioModel->update($id, $data);
+     session()->setFlashdata('success', 'Usuario restaurado con éxito');
+    return $this->response->redirect(site_url('/crud_usuarios'));
+  }
 }

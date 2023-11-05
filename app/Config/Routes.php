@@ -44,6 +44,22 @@ $routes->get('/login','login_controller');
 $routes->post('/enviarlogin','login_controller::auth');
 $routes->get('/panel','panel_controller::index',['filter'=>'auth']);
 $routes->get('/logout','login_controller::logout');
+
+/*Rutas del crud de usuarios*/
+$routes->get('crud_usuarios', 'Usuario_controller::cargar_crud', ['filter' => 'admin']);
+$routes->get('ver_usuarios_eliminados', 'Usuario_controller::ver_eliminados', ['filter' => 'admin']);
+
+$routes->get('/ver_editar_usuario/(:num)', 'Usuario_controller::ver_editarUsuario/$1', ['filter' => 'admin']);
+
+$routes->get('Crear Users', 'Usuario_controller::create_user', ['filter' => 'admin']);
+
+$routes->post('/enviar-user', 'Usuario_controller::formValidation_user', ['filter' => 'admin']);
+
+$routes->post('/editar_usuario/(:num)', 'Usuario_controller::editarUsuario/$1', ['filter' => 'admin']);
+
+$routes->get('/eliminar_usuario/(:num)', 'Usuario_controller::eliminarUsuario/$1', ['filter' => 'admin']);
+
+$routes->get('/restaurar_usuario/(:num)', 'Usuario_controller::restaurarUsuario/$1', ['filter' => 'admin']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing
