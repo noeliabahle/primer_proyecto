@@ -51,4 +51,4 @@ class ProductoController {
   }
 }
 
-export const producto = new productoController();
+export const producto = new ProductoController();

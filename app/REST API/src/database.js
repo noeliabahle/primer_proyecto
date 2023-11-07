@@ -5,6 +5,6 @@ const properties = {
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'noelia-bahle'
+    database: 'bahle_noelia'
 };
 export const pool = mysqlConnection.createPool(properties);
