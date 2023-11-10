@@ -15,8 +15,8 @@ class ProductoController {
     const producto = req.body;
     try {
       const [result] = await pool.query(
-        `INSERT INTO Productos(producto, imagen, categoria_id, precio, precio_venta, stock, stock_min, eliminado) VALUES (?, ?, ?, ?, ?)`,
-        [producto.nombreProd, producto.imagen, producto.categoria_id, producto.precio, producto.stock, producto.stock_min, producto.eliminado]
+        `INSERT INTO Productos(producto, categoria_id, precio, precio_venta, stock, stock_min, eliminado) VALUES (?, ?, ?, ?, ?)`,
+        [producto.nombreProd, producto.categoria_id, producto.precio, producto.stock, producto.stock_min, producto.eliminado]
       );
       res.json({ "Id insertado": result.insertId });
     } catch (error) {
@@ -40,7 +40,7 @@ class ProductoController {
     const producto = req.body;
     try {
       const [result] = await pool.query(
-        `UPDATE productos SET nombre=(?), autor=(?), categoria=(?), anio_publicacion=(?), ISBN=(?) WHERE id=(?)`,
+        `UPDATE productos SET producto=(2), categoria_id=(2), precio=(2), precio_venta=(2), stock=(2), stock_min=(2), eliminado=(2)`,
         [producto.nombreProd, producto.imagen, producto.categoria_id, producto.precio, producto.stock, producto.stock_min, producto.eliminado]
       );
       res.json({ "registros actualizados": result.changedRows });

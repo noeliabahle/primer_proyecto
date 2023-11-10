@@ -1,0 +1,21 @@
+{
+  "id": "0ef1f106-7eca-4746-a4e1-60a45f4d45f6",
+  "version": "2.0",
+  "name": "prueba 1",
+  "url": "http://localhost/primer_proyecto/",
+  "tests": [{
+    "id": "de61258e-c4b0-4591-bb65-fd65ec9f5736",
+    "name": "Untitled",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "b9ac6729-792a-452f-b2d4-5a6048142a27",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["de61258e-c4b0-4591-bb65-fd65ec9f5736"]
+  }],
+  "urls": [],
+  "plugins": []
+}

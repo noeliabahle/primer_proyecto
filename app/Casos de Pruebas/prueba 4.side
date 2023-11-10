@@ -1,0 +1,157 @@
+{
+  "id": "44ccf93c-c0d5-4eb4-9fcd-35cae3a51e94",
+  "version": "2.0",
+  "name": "prueba 4",
+  "url": "http://localhost/primer_proyecto/",
+  "tests": [{
+    "id": "834aad82-01c4-43dc-86a2-706035c36449",
+    "name": "prueba 4",
+    "commands": [{
+      "id": "0a0484e7-6762-4354-93f3-65fbf2d0928b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/primer_proyecto/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f9181f4-b22b-4927-a0e4-3b7a09ed88b0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1075x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0b08432-a33f-4ef7-9759-0a9f4474f84c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cerrar Sesion",
+      "targets": [
+        ["linkText=Cerrar Sesion", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Cerrar Sesion')]", "xpath:link"],
+        ["xpath=//div[@id='navbarTogglerDemo03']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/primer_proyecto/logout']", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cerrar Sesion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ca2b9aa-c0ee-4706-8581-d695bca68b47",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03a1749d-917e-4c22-9a1d-964a3f798f65",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin_admin@gmail.com"
+    }, {
+      "id": "b546e2cd-c24b-41d8-a628-eff224469bc6",
+      "comment": "",
+      "command": "type",
+      "target": "id=exampleInputPassword1",
+      "targets": [
+        ["id=exampleInputPassword1", "id"],
+        ["name=pass", "name"],
+        ["css=#exampleInputPassword1", "css:finder"],
+        ["xpath=//input[@id='exampleInputPassword1']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456789"
+    }, {
+      "id": "cff30305-4394-482d-9229-1faa3a6b2698",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c39772b-f81f-4cca-89ba-54f711594312",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registrarse",
+      "targets": [
+        ["linkText=Registrarse", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Registrarse')]", "xpath:link"],
+        ["xpath=//div[@id='navbarTogglerDemo03']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'registro')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Registrarse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa946aa6-6eb0-4402-bfb9-d6b2dd88fc2e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cerrar Sesión",
+      "targets": [
+        ["linkText=Cerrar Sesión", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Cerrar Sesión')]", "xpath:link"],
+        ["xpath=//div[@id='navbarTogglerDemo03']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/primer_proyecto/logout']", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cerrar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc8688f1-c6b4-479f-9d1b-ff17f7753ec2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Quiénes somos",
+      "targets": [
+        ["linkText=Quiénes somos", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Quiénes somos')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'quienes_somos')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Quiénes somos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be57f141-9e96-4f1d-9252-b48f73c461d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4442fb28-4c76-4470-925e-6ce8e9822ed5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["834aad82-01c4-43dc-86a2-706035c36449"]
+  }],
+  "urls": ["http://localhost/primer_proyecto/"],
+  "plugins": []
+}

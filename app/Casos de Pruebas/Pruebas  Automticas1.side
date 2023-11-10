@@ -2,7 +2,7 @@
   "id": "f4e4cefb-2d0b-4e17-ba83-f4461daba4a6",
   "version": "2.0",
   "name": "Pruebas  Automáticas",
-  "url": "http://localhost",
+  "url": "http://localhost/primer_proyecto/",
   "tests": [{
     "id": "c65cfa27-ec27-46f6-bc42-d4b796cf586b",
     "name": "primer_prueba",
